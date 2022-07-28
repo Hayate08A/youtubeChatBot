@@ -4,7 +4,7 @@ import "./assets/styles/style.css";
 import defaultDataset from "./dataset";
 
 export default class App extends React.Component {
-  constructor(props:any) {
+  constructor(props) {
     super(props);
     this.state = {
       answers: [],
@@ -17,7 +17,9 @@ export default class App extends React.Component {
   render() {
     return (
       <section className='c-section'>
-        <div className="c-box"></div>
+        <div className="c-box">
+          {this.state.currentId}
+        </div>
       </section>
     );
   }
