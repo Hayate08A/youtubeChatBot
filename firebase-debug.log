@@ -1,0 +1,43 @@
+[debug] [2022-07-28T08:57:26.903Z] ----------------------------------------------------------------------
+[debug] [2022-07-28T08:57:26.904Z] Command:       /Users/sow/.nvm/versions/node/v16.15.0/bin/node /Users/sow/.nvm/versions/node/v16.15.0/bin/firebase deploy
+[debug] [2022-07-28T08:57:26.904Z] CLI Version:   11.4.0
+[debug] [2022-07-28T08:57:26.904Z] Platform:      darwin
+[debug] [2022-07-28T08:57:26.904Z] Node Version:  v16.15.0
+[debug] [2022-07-28T08:57:26.906Z] Time:          Thu Jul 28 2022 17:57:26 GMT+0900 (日本標準時)
+[debug] [2022-07-28T08:57:26.906Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-28T08:57:26.939Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-28T08:57:26.939Z] > authorizing via signed-in user (ha08ya@gmail.com)
+[debug] [2022-07-28T08:57:26.939Z] [iam] checking project chatbot-e11e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-28T08:57:26.940Z] > refreshing access token with scopes: []
+[debug] [2022-07-28T08:57:26.940Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-28T08:57:26.940Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-28T08:57:27.077Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-28T08:57:27.077Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-28T08:57:27.119Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-e11e7:testIamPermissions [none]
+[debug] [2022-07-28T08:57:27.119Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-e11e7:testIamPermissions x-goog-quota-user=projects/chatbot-e11e7
+[debug] [2022-07-28T08:57:27.119Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-e11e7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-28T08:57:27.804Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-e11e7:testIamPermissions 200
+[debug] [2022-07-28T08:57:27.804Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatbot-e11e7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-28T08:57:27.804Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chatbot-e11e7/serviceAccounts/chatbot-e11e7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-07-28T08:57:27.804Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chatbot-e11e7/serviceAccounts/chatbot-e11e7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-28T08:57:28.491Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chatbot-e11e7/serviceAccounts/chatbot-e11e7@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-07-28T08:57:28.491Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chatbot-e11e7/serviceAccounts/chatbot-e11e7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-07-28T08:57:28.492Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-e11e7 [none]
+[debug] [2022-07-28T08:57:28.935Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-e11e7 200
+[debug] [2022-07-28T08:57:28.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-e11e7 {"projectId":"chatbot-e11e7","projectNumber":"528941142060","displayName":"youtube-chatbot","name":"projects/chatbot-e11e7","resources":{"hostingSite":"chatbot-e11e7","storageBucket":"chatbot-e11e7.appspot.com","locationId":"asia-northeast1"},"state":"ACTIVE","etag":"1_9fd7b8ac-ad74-4ee9-83d5-2debc6910540"}
+[info] 
+[info] === Deploying to 'chatbot-e11e7'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
+[info] ✔  functions: Finished running predeploy script. 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2022-07-28T08:57:36.354Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/chatbot-e11e7:test [none]
+[debug] [2022-07-28T08:57:36.354Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/chatbot-e11e7:test [omitted]
+[debug] [2022-07-28T08:57:37.530Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/chatbot-e11e7:test 200
+[debug] [2022-07-28T08:57:37.530Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/chatbot-e11e7:test {}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2022-07-28T08:57:37.531Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chatbot-e11e7 [none]
