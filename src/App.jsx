@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import "./assets/styles/style.css";
+import { AnswersList } from "./components/index";
 import defaultDataset from "./dataset";
 
 export default class App extends React.Component {
