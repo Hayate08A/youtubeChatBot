@@ -2,7 +2,14 @@
 import Button from "@material-ui/core/Button";
 
 const Answer = (props) => {
-  return <Button variant="outlined">{props.content}</Button>;
+  return (
+    <Button
+      variant="outlined"
+      onClick={() => props.select(props.content, props.nextId)}
+    >
+      {props.content}
+    </Button>
+  );
 };
 
 export default Answer;
